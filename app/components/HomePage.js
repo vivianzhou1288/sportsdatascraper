@@ -120,7 +120,7 @@ const HomePage = () => {
               <p>
                 We specialize in web scraping to deliver comprehensive data on
                 athletes. Whether you are interested in stats, records, or
-                personal details, we've got you covered. Get the insights you
+                personal details, we have got you covered. Get the insights you
                 need on any athlete you want to know about. Input your favorite
                 athlete ESPN profile page and we got you covered.
               </p>
