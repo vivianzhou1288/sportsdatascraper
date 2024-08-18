@@ -119,10 +119,10 @@ const HomePage = () => {
             <div className="text-sm w-1/2">
               <p>
                 We specialize in web scraping to deliver comprehensive data on
-                athletes. Whether you're interested in stats, records, or
+                athletes. Whether you are interested in stats, records, or
                 personal details, we've got you covered. Get the insights you
                 need on any athlete you want to know about. Input your favorite
-                athlete's ESPN profile page and we got you covered.
+                athlete ESPN profile page and we got you covered.
               </p>
               {/* Link to about page: */}
               <Link href="/aboutpage">
