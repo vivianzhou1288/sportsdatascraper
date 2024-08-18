@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Sportly",
-  description: "A sports",
+  description: "An web scrapping app for ESPN athlete's profile pages",
 };
 
 export default function RootLayout({ children }) {
