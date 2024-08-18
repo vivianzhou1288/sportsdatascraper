@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { JSDOM } from "jsdom";
-import fs from "fs";
 
 export async function GET(request) {
   const url = new URL(request.url).searchParams.get("url");
