@@ -7,13 +7,13 @@ export const AppProvider = ({ children }) => {
     // Get initial data from localStorage if it exists
     if (typeof window !== "undefined") {
       const savedData = localStorage.getItem("data");
-      return savedData ? JSON.parse(savedData) : {};
+      return savedData ? JSON.parse(savedData) : null;
     } // Parse JSON if data exists
-    return {};
+    return null;
   });
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && data !== null) {
       localStorage.setItem("data", JSON.stringify(data));
     }
   }, [data]);

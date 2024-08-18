@@ -12,6 +12,7 @@ import {
   Button,
 } from "@mui/material";
 import { useRouter } from "next/navigation";
+import LoadingPage from "../components/LoadingPage";
 const { getJson } = require("serpapi");
 
 const PlayerPage = () => {
@@ -20,7 +21,15 @@ const PlayerPage = () => {
   const [image, setImage] = useState("");
   const router = useRouter();
 
-  if (!data) return <div>Loading</div>;
+  useEffect(() => {
+    if (data) {
+      setLoading(false); // Set loading to false once data is available
+    }
+  }, [data]);
+
+  if (loading || !data) {
+    return <LoadingPage />; // Render loading state
+  }
 
   // useEffect(() => {
   //   if (data && data.name) {
